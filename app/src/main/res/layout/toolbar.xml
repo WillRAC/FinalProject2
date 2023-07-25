@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/MBlue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <ImageButton
+        android:background="@drawable/homeIcon_foreground"
+        android:id="@+id/homeIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <ImageButton
+        android:background="@drawable/searchIcon_foreground"
+        android:id="@+id/searchIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <ImageButton
+        android:background="@drawable/infoIcon_foreground"
+        android:id="@+id/infoIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <ImageButton
+        android:background="@drawable/exitIcon_foreground"
+        android:id="@+id/exitIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
