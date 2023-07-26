@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsFragment">
+
+
+    <!-- [START]: Character Name      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Title_fragment"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewTitleValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Title_fragmentA"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <!-- [END]: Character Name      -->
+
+
+    <!-- [START]: Character Height      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Desc_fragment"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Desc_fragmentA"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <!-- [END]: Character Height      -->
+
+
+    <!-- [START]: Character Mass      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewUrl"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Url_fragment"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewUrlValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Url_fragmentA"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewUrl"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescValue" />
+
+    </LinearLayout>
+    <!-- [END]: Character Mass      -->
+
+</LinearLayout>

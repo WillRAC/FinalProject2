@@ -7,4 +7,10 @@
     <string name="enter">Enter</string>
     <string name="myInfo">William Rich, 041060857</string>
     <string name="myInfo2">Thank you for visiting my app, I hope you have enjoyed it.</string>
+    <string name="Desc_fragment">Desc:</string>
+    <string name="Url_fragment">Url:</string>
+    <string name="Title_fragment">Title:</string>
+    <string name="Desc_fragmentA">fill_me</string>
+    <string name="Url_fragmentA">fill_me</string>
+    <string name="Title_fragmentA">fill_me</string>
 </resources>

@@ -46,10 +46,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-                <ListView
-                    android:id="@+id/ListViewMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                <include
+                    android:id="@+id/fragment_list"
+                    layout="@layout/fragment_list"/>
             </LinearLayout>
         </ScrollView>
 
