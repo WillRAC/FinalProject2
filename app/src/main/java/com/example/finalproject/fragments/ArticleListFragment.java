@@ -36,7 +36,7 @@ import java.util.List;
 
 public class ArticleListFragment extends Fragment {
 
-    private final static String NEWS_URL = "http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml";
+    private final static String NEWS_URL = "https://content.guardianapis.com";
 
     private InterfaceMain interMain;
 
@@ -48,13 +48,15 @@ public class ArticleListFragment extends Fragment {
 
     private List<NewsArticle> articles;
 
+    private String searchUrl = "";
+
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
 
         try {
-            interMain = (InterfaceMain) context;
+            interMain  = (InterfaceMain) context;
         } catch (ClassCastException ccex) {
             ccex.printStackTrace();
         }
@@ -79,6 +81,11 @@ public class ArticleListFragment extends Fragment {
         req.execute();
 
         return listView;
+    }
+
+    public void setSearchUrl(String searchUrl){
+
+        this.searchUrl = searchUrl;
     }
 
 
@@ -124,12 +131,13 @@ public class ArticleListFragment extends Fragment {
 
             try {
 
-                URL url = new URL(NEWS_URL);
+                URL url = new URL(NEWS_URL + "/search?q=" + searchUrl);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
 
                 // Read the response
-                InputStream inputStream = connection.getInputStream();
+                InputStream inputStream = connection.getInpu
+                tStream();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
                 StringBuilder sb = new StringBuilder();
                 String line;
