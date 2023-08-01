@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import com.AdapterListCharacterName;
 import com.ModelCharacter;
+import com.example.finalproject.AdapterListNewsArticle;
 import com.example.finalproject.NewsArticle;
 import com.example.finalproject.R;
 
@@ -72,7 +73,7 @@ public class ArticleListFragment extends Fragment {
 
         View listView = inflater.inflate(R.layout.fragment_list, container, false);
 
-        frameLayoutDetailView = (FrameLayout) listView.findViewById(R.id.fragmentCharacterDetail);
+        frameLayoutDetailView = (FrameLayout) listView.findViewById(R.id.fragmentNewsArticle);
 
         lstArticles = (ListView) listView.findViewById(R.id.theList);
 
@@ -92,26 +93,26 @@ public class ArticleListFragment extends Fragment {
 
     private void loadListItemsOntoListView(List<NewsArticle> articles) {
 
-        lstArticles.setAdapter(new AdapterListCharacterName(coxContext, android.R.layout.simple_list_item_1, articles));
+        lstArticles.setAdapter(new AdapterListNewsArticle(coxContext, android.R.layout.simple_list_item_1, articles));
         lstArticles.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-                NewsArticle selectedCharacter = articles.get(position);
+                NewsArticle selectedArticle= articles.get(position);
 
                 if (frameLayoutDetailView != null) {
                     // We're in tablet mode
 
                     if (interMain != null) {
-                        interMain.codeToSetUpDetailsFragmentOnTabletMode(selectedCharacter);
+                        interMain.codeToSetUpDetailsFragmentOnTabletMode(selectedArticle);
                     }
 
                 } else {
                     // We're in phone mode
 
                     if (interMain != null) {
-                        interMain.codeToSetUpDetailsFragmentOnPhoneMode(selectedCharacter);
+                        interMain.codeToSetUpDetailsFragmentOnPhoneMode(selectedArticle);
                     }
 
                 }
@@ -136,8 +137,7 @@ public class ArticleListFragment extends Fragment {
 
 
                 // Read the response
-                InputStream inputStream = connection.getInpu
-                tStream();
+                InputStream inputStream = connection.getInputStream();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
                 StringBuilder sb = new StringBuilder();
                 String line;

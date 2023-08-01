@@ -21,7 +21,7 @@ public class AdapterListNewsArticle extends ArrayAdapter<NewsArticle> {
     private TextView txtArticleName;
 
 
-    public AdapterListNewsArticle(@NonNull Context context, int resource, @NonNull List<NewsArticle> objects, List<NewsArticle> listNews) {
+    public AdapterListNewsArticle(@NonNull Context context, int resource, @NonNull List<NewsArticle> objects) {
         super(context, resource, objects);
 
         this.coxContext = context;
