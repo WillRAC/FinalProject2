@@ -16,7 +16,7 @@ public class AdapterListNewsArticle extends ArrayAdapter<NewsArticle> {
 
     private final Context coxContext;
 
-    private final List<NewsArticle> listNews;
+    private List<NewsArticle> listNews;
 
     private TextView txtArticleName;
 
@@ -32,7 +32,7 @@ public class AdapterListNewsArticle extends ArrayAdapter<NewsArticle> {
 
     @Override
     public int getCount() {
-        super.getCount();
+//        super.getCount();
 
         return listNews.size();
     }

@@ -17,7 +17,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
         EditText editText = findViewById(R.id.EditTextSearch);
         Button button = findViewById(R.id.SearchButton);
-
-        Toolbar toolbar = findViewById(R.id.toolbarmain);
 
         ImageButton homeicon;
         ImageButton searchicon;
