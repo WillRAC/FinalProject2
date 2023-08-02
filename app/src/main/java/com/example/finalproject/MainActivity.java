@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        exiticon = findViewById(R.id.searchIcon);
+        exiticon = findViewById(R.id.exitIcon);
 
         exiticon.setOnClickListener(new View.OnClickListener() {
             @Override

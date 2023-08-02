@@ -20,19 +20,6 @@ public class HomeActivity extends AppCompatActivity {
 
     Button homeImage;
 
-    protected void onPause() {
-        super.onPause();
-    }
-
-    ActivityResultLauncher<Intent> activityLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-
-                }
-            }
-    );
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-                activityLauncher.launch(intent);
+                startActivity(intent);
             }
         });
     }
