@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        codeToSetUpListFragment();
+
         EditText editText = findViewById(R.id.EditTextSearch);
         Button button = findViewById(R.id.SearchButton);
 
