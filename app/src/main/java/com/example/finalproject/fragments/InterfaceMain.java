@@ -5,8 +5,8 @@ import com.example.finalproject.NewsArticle;
 
 public interface InterfaceMain {
 
-    void codeToSetUpDetailsFragmentOnPhoneMode(NewsArticle);
+    void codeToSetUpDetailsFragmentOnPhoneMode(NewsArticle selectedArticle);
 
-    void codeToSetUpDetailsFragmentOnTabletMode(NewsArticle);
+    void codeToSetUpDetailsFragmentOnTabletMode(NewsArticle selectedArticle);
 
 }

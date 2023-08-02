@@ -14,12 +14,18 @@ public class NewsArticle implements Serializable {
     public NewsArticle() {}
 
     public String getArticleTitle() { return articleTitle; }
-    public String setArticleTitle(String articleTitle) {this.articleTitle = articleTitle; }
+    public String setArticleTitle(String articleTitle) {this.articleTitle = articleTitle;
+        return articleTitle;
+    }
 
     public String getArticleDesc() { return articleDesc; }
-    public String setArticleDesc(String articleDesc) {this.articleDesc = articleDesc; }
+    public String setArticleDesc(String articleDesc) {this.articleDesc = articleDesc;
+        return articleDesc;
+    }
 
     public String getArticleUrl() { return articleUrl; }
-    public String setArticleUrl(String articleUrl) {this.articleUrl = articleUrl; }
+    public String setArticleUrl(String articleUrl) {this.articleUrl = articleUrl;
+        return articleUrl;
+    }
 
 }

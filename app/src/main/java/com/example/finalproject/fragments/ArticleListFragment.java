@@ -15,8 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.AdapterListCharacterName;
-import com.ModelCharacter;
+
 import com.example.finalproject.AdapterListNewsArticle;
 import com.example.finalproject.NewsArticle;
 import com.example.finalproject.R;
@@ -73,7 +72,7 @@ public class ArticleListFragment extends Fragment {
 
         View listView = inflater.inflate(R.layout.fragment_list, container, false);
 
-        frameLayoutDetailView = (FrameLayout) listView.findViewById(R.id.fragmentNewsArticle);
+        frameLayoutDetailView = (FrameLayout) listView.findViewById(R.id.fragmentArticleDetail);
 
         lstArticles = (ListView) listView.findViewById(R.id.theList);
 

@@ -25,7 +25,6 @@ public class AdapterListNewsArticle extends ArrayAdapter<NewsArticle> {
         super(context, resource, objects);
 
         this.coxContext = context;
-        this.listNews = listNews;
 
         this.listNews = objects;
 
